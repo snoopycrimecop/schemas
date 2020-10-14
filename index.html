@@ -1,0 +1,95 @@
+<?xml version='1.0'?>
+<!DOCTYPE html PUBLIC "-//XML-DEV//DTD XHTML RDDL 1.0//EN"
+ "http://www.w3.org/2001/rddl/rddl-xhtml.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:rddl="http://www.rddl.org/" xml:lang="en">
+<head>
+        <title>Open Microscopy Environment Schemas</title>
+</head>
+<body>
+<h1>Open Microscopy Environment Schemas</h1>
+<div class="head">
+<p>October 2020</p>
+</div>
+<div id="toc">
+<h2>Table of contents</h2>
+        <ol>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#schema.list">Schemas</a></li>
+                <li><a href="#history">History</a></li>
+        </ol>
+</div>
+<div id="intro">
+<h2>Introduction</h2>
+<p>This document outlines the XML Schemas created by the
+<a href="http://www.openmicroscopy.org/">Open Microscopy Environment</a>.
+Detailed information on the schemas is available
+<a href="http://www.openmicroscopy.org/site/support/ome-model/index.html">here</a>.
+</p>
+</div>
+<div id="schema.list">
+<h2>Schemas</h2>
+<p>This has the schema name, the current version, a link to the XSD file, and
+a short description. Generated documentation for the schemas is available at:
+<a href="http://www.openmicroscopy.org/Schemas/Documentation/Generated/OME-2016-06/ome.html">http://www.openmicroscopy.org/Schemas/Documentation/Generated/OME-2016-06/ome.html</a></a>
+</p>
+<p><em>Note: Some browsers will try to render XSD files when you view them.
+This can result in either a blank screen or unformatted text. Choose to either
+download the file or view the source.</em></p>
+<h4>Active Schemas</h4>
+<ul>
+<li><a href="OME/index.html">OME</a> - June 2016, version 2 [<a href="OME/2016-06/ome.xsd">ome.xsd</a>] The main schema which defines the OME ontology for microscopy.</li>
+</ul>
+<h4>Legacy Schemas</h4>
+<ul>
+<li><a href="AnalysisChain/index.html">AnalysisChain</a> - September 2009, version 1 [<a href="AnalysisChain/2009-09/AnalysisChain.xsd">AnalysisChain.xsd</a>] The Analysis Chain schema. Analysis chains are how module outputs are connected to inputs of other modules.</li>
+<li><a href="AnalysisModule/index.html">AnalysisModule</a> - September 2009, version 1 [<a href="AnalysisModule/2009-09/AnalysisModule.xsd">AnalysisModule.xsd</a>] The Analysis Module Library schema. Analysis modules are image analysis algorithms or, more generally, how information is generated in OME. Makes use of CLI and MLI schemas.</li>
+<li><a href="BinaryFile/index.html">BinaryFile</a> - January 2015, version 1 [<a href="BinaryFile/2015-01/BinaryFile.xsd">BinaryFile.xsd</a>] The Binary File schema used to describe a file location, or the location of a fragment within a file. It is combined with the main OME schema as of 2016-06.</li>
+<li><a href="CA/index.html">CA</a> - September 2009, version 1 [<a href="CA/2009-09/CA.xsd">CA.xsd</a>] The standard Custom Attribute schema.</li>
+<li><a href="CLI/index.html">CLI</a> - September 2009, version 1 [<a href="CLI/2009-09/CLI.xsd">CLI.xsd</a>] The Command Line Interface sub-schema.</li>
+<li><a href="DataHistory/index.html">DataHistory</a> - September 2009, version 1 [<a href="DataHistory/2009-09/DataHistory.xsd">DataHistory.xsd</a>] The Data History schema. Data history describes the data dependency in OME.</li>
+<li><a href="Editor/index.html">Editor</a> - April 2008, version 1 [<a href="Editor/2008-04/Editor.xsd">Editor.xsd</a>] The Editor schema.</li>
+<li><a href="MLI/index.html">MLI</a> - September 2009, version 1 [<a href="MLI/2009-09/MLI.xsd">MLI.xsd</a>] The Matlab Interface sub-schema.</li>
+<li><a href="OMERO/index.html">OMERO</a> - June 2011, version 1 [<a href="OMERO/2011-06/OMERO.xsd">OMERO.xsd</a>] The schema extensions used by OMERO. It is not used by the OME schema but provides a structure for data in StructuredAnnotation blocks used by OMERO.</li>
+<li><a href="ROI/index.html">ROI</a> - January 2015, version 1 [<a href="ROI/2015-01/ROI.xsd">ROI.xsd</a>] The Region Of Interest schema. It is combined with the main OME schema as of 2016-06.</li>
+<li><a href="SA/index.html">SA</a> - January 2015, version 1 [<a href="SA/2015-01/SA.xsd">SA.xsd</a>] The Structured Annotation schema. It is combined with the main OME schema as of 2016-06.</li>
+<li><a href="SPW/index.html">SPW</a> - January 2015, version 1 [<a href="SPW/2015-01/SPW.xsd">SPW.xsd</a>] The Screen/Plate/Well schema. It is combined with the main OME schema as of 2016-06.</li>
+<li><a href="STD/index.html">STD</a> - September 2009, version 1 [<a href="STD/2009-09/STD.xsd">STD.xsd</a>] The Semantic Type definition schema. Once a Semantic Type is defined, data for the defined type can be imported into the OME server.</li>
+</ul>
+</div>
+<div id="history">
+<h2>History</h2>
+<p>This lists the most recent version of past schemas. The schemas are in a
+process of constant development to extend and refine the OME Data Model. See
+the
+<a href="http://www.openmicroscopy.org/site/support/ome-model/schemas/index.html">Schema version history</a> for more information.
+</p>
+<ul>
+<li>June 2016 - namespace /2016-06/</li>
+<li>January 2015 - namespace /2015-01/</li>
+<li>June 2013 - namespace /2013-06/</li>
+<li>June 2012 - namespace /2012-06/</li>
+<li>June 2011 - namespace /2011-06/</li>
+<li>June 2010 - namespace /2010-06/</li>
+<li>April 2010 - namespace /2010-04/</li>
+<li>September 2009 - namespace /2009-09/</li>
+<li>September 2008 - namespace /2008-09/</li>
+<li>April 2008 - namespace /2008-04/</li>
+<li>February 2008 - namespace /2008-02/</li>
+<li>June 2007 - namespace /2007-06/</li>
+<li>2003 (FC) - namespace /FC/*.xsd</li>
+<li>2003 (RC6) - namespace /RC6/*.xsd</li>
+<li>2003 (RC5) - namespace /RC5/*.xsd</li>
+<li>2003 (RC4) - namespace /RC4/*.xsd</li>
+<li>2003 (RC3) - namespace /RC3/*.xsd</li>
+<li>2003 (RC2) - namespace /RC2/*.xsd</li>
+<li>2003 (RC1) - namespace /RC1/*.xsd</li>
+<li>2003 (IR3) - namespace /IR3/*.xsd</li>
+<li>2003 (IR2) - namespace /IR2/*.xsd</li>
+<li>2003 (IR1) - namespace /IR1/*.xsd</li>
+</ul>
+</div>
+<hr/>
+</body>
+</html>
